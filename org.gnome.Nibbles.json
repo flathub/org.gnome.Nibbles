@@ -45,8 +45,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-nibbles/3.36/gnome-nibbles-3.36.0.tar.xz",
-                    "tag": "3.36.0",
-                    "commit": "81a59c11693426e60b4b663ef48c248c997e14e845606e95e52575a1bd647f07"
+                    "sha256": "81a59c11693426e60b4b663ef48c248c997e14e845606e95e52575a1bd647f07"
                 }
             ]
         }
