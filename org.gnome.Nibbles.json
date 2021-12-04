@@ -61,13 +61,9 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-nibbles/3.38/gnome-nibbles-3.38.2.tar.xz",
-                    "sha256": "457a64b1c88e2d8d0143c452ffd01f0300d7d3005802954ef5abf9c896b353d9"
-                },
-                {
-                    "type": "patch",
-                    "path": "62964e9256fcac616109af874dbb2bd8342a9853.patch" 
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-nibbles.git",
+                    "commit": "8d07c0071a972654f58e41a858eafb2ef272a114"
                 }
             ]
         }
