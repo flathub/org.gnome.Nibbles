@@ -19,6 +19,7 @@
     "modules": [
         {
             "name" : "gsound",
+            "buildsystem": "meson",
             "sources" : [
                 {
                     "type" : "archive",
