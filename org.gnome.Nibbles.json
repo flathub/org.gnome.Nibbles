@@ -64,7 +64,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-nibbles.git",
-                    "commit": "8d07c0071a972654f58e41a858eafb2ef272a114"
+                    "commit": "6eb6013344ab720275adadaeede5154e3d2afda2"
                 }
             ]
         }
