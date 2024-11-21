@@ -72,7 +72,7 @@
             "name": "gnome-nibbles",
             "buildsystem": "meson",
             "config-opts": [
-		"-Dversion=4.1.1",
+		"-Dversion=4.1.2",
                 "-Dappend_to_version= (flathub.org)",
                 "-Dwebsite=https://flathub.org/apps/org.gnome.Nibbles"
             ],
@@ -80,7 +80,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/GNOME/gnome-nibbles.git",
-                    "commit": "c8d8b86160c6a55c2dff80426b8ad7b4ae6fd438" /* release 4.1.1 */
+                    "commit": "fa866fd0a3be22fc98f7c45163becb3bb769f5dc" /* release 4.1.2 */
                 }
             ]
         }
