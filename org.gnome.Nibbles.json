@@ -58,6 +58,16 @@
             ]
         },
         {
+            "name": "libgee",
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/GNOME/libgee.git",
+                    "commit": "ce8461ff6ea8ed79ce06b4241cb4fbb6d3d314f1" /* release 0.20.6 + fixes */
+                }
+            ]
+        },        {
             "name": "libgnome-games-support",
             "buildsystem": "meson",
             "sources": [
