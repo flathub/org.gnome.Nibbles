@@ -68,6 +68,33 @@
                 }
             ]
         },
+		{
+			"name": "libgvc",
+			"buildsystem": "autotools",
+			"sources": [
+				{
+                    "type": "git",
+                    "url": "https://gitlab.com/graphviz/graphviz.git",
+					"tag": "12.2.0"
+				}
+			]
+		},
+		{
+			"name": "vala",
+			"buildsystem": "simple",
+			"sources": [
+				{
+                    "type": "git",
+                    "url": "https://github.com/GNOME/vala.git",
+					"tag": "0.56.17"
+				}
+			],
+			"build-commands": [
+		        "./autogen.sh --prefix=/app",
+		        "make",
+		        "make install"
+			]
+		},
         {
             "name": "libgnome-games-support",
             "buildsystem": "meson",
