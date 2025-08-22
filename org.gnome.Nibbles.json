@@ -1,18 +1,14 @@
 {
     "app-id": "org.gnome.Nibbles",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-nibbles",
     "finish-args": [
-        /* X11 + XShm access */
         "--share=ipc",
         "--socket=fallback-x11",
-        /* Wayland access */
         "--socket=wayland",
-        /* Sound! */
         "--socket=pulseaudio",
-        /* OpenGL access */
         "--device=dri"
     ],
     "cleanup": [
@@ -29,42 +25,35 @@
     ],
     "modules": [
         {
-            "name" : "gsound",
+            "name": "gsound",
             "buildsystem": "meson",
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz",
-                    "sha256": "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz",
+                    "sha256": "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gsound"
+                    }
                 }
             ],
             "modules": [
-                {
-                    "name" : "libcanberra",
-                    "sources" : [
-                        {
-                            "type" : "archive",
-                            "url" : "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
-                            "sha256" : "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
-                        }
-                    ],
-                    "config-opts" : [
-                        "--disable-alsa",
-                        "--disable-null",
-                        "--disable-oss",
-                        "--disable-gtk3"
-                    ]
-                }
+                "shared-modules/libcanberra/libcanberra.json"
             ]
         },
         {
             "name": "libgee",
-            "buildsystem": "autotools",
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/GNOME/libgee.git",
-                    "commit": "ce8461ff6ea8ed79ce06b4241cb4fbb6d3d314f1" /* release 0.20.6 + fixes */
+                    "url": "https://gitlab.gnome.org/GNOME/libgee.git",
+                    "tag": "0.20.8",
+                    "commit": "d2e135e98718e37cae04599689fea8fb145b0b74",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -74,8 +63,13 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/GNOME/libgnome-games-support.git",
-                    "commit": "d388a9cdd69e84c444043e715368b032fce27ecf" /* release 2.0 + language updates */
+                    "url": "https://gitlab.gnome.org/GNOME/libgnome-games-support.git",
+                    "tag": "2.0.1",
+                    "commit": "6e2a62bba8c61dbf603cdcef3030d1b125302082",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -83,15 +77,20 @@
             "name": "gnome-nibbles",
             "buildsystem": "meson",
             "config-opts": [
-		"-Dversion=4.1.1",
+                "-Dversion=4.2.2",
                 "-Dappend_to_version= (flathub.org)",
                 "-Dwebsite=https://flathub.org/apps/org.gnome.Nibbles"
             ],
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/GNOME/gnome-nibbles.git",
-                    "commit": "c8d8b86160c6a55c2dff80426b8ad7b4ae6fd438" /* release 4.1.1 */
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-nibbles.git",
+                    "tag": "4.2.2",
+                    "commit": "db9ac9be5270c1a627060ade31972fa5ecb58ec5",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         }
