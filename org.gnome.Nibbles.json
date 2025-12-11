@@ -83,7 +83,6 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-nibbles/4.4/gnome-nibbles-4.4.2.tar.xz",
-                    "tag": "sha256",
                     "sha256": "16e0602870646a6653876cbc61ee23f76340c26b12c9e89c7c30120845044155",
                     "x-checker-data": {
                         "type": "gnome",
