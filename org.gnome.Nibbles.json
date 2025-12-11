@@ -77,19 +77,19 @@
             "name": "gnome-nibbles",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dversion=4.2.2",
+                "-Dversion=4.4.2",
                 "-Dappend_to_version= (flathub.org)",
                 "-Dwebsite=https://flathub.org/apps/org.gnome.Nibbles"
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gnome-nibbles.git",
-                    "tag": "4.2.2",
-                    "commit": "db9ac9be5270c1a627060ade31972fa5ecb58ec5",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-nibbles/4.4/gnome-nibbles-4.4.2.tar.xz",
+                    "tag": "sha256",
+                    "sha256": "16e0602870646a6653876cbc61ee23f76340c26b12c9e89c7c30120845044155",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
+                        "type": "gnome",
+                        "name": "gnome-nibbles"
                     }
                 }
             ]
