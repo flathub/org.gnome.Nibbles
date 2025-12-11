@@ -46,13 +46,12 @@
             "name": "libgee",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libgee.git",
-                    "tag": "0.20.8",
-                    "commit": "d2e135e98718e37cae04599689fea8fb145b0b74",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz",
+                    "sha256": "189815ac143d89867193b0c52b7dc31f3aa108a15f04d6b5dca2b6adfad0b0ee",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
+                        "type": "gnome",
+                        "name": "libgee"
                     }
                 }
             ]
@@ -62,13 +61,12 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libgnome-games-support.git",
-                    "tag": "2.0.1",
-                    "commit": "6e2a62bba8c61dbf603cdcef3030d1b125302082",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgnome-games-support/2.0/libgnome-games-support-2.0.2.tar.xz",
+                    "sha256": "82bbc74f08f98b833a9b6444b8479e1bd84ded0a07425d057b45f38e8783e5bd",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
+                        "type": "gnome",
+                        "name": "libgnome-games-support"
                     }
                 }
             ]
@@ -85,6 +83,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-nibbles/4.4/gnome-nibbles-4.4.2.tar.xz",
+                    "tag": "sha256",
                     "sha256": "16e0602870646a6653876cbc61ee23f76340c26b12c9e89c7c30120845044155",
                     "x-checker-data": {
                         "type": "gnome",
