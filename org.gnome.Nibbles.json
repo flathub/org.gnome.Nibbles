@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Nibbles",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-nibbles",
     "finish-args": [
@@ -13,15 +13,11 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
+        "/share/gir-1.0",
         "/share/man",
-        "/share/pkgconfig",
-        "/share/vala",
-        "*.la",
-        "*.a"
+        "/share/vala"
     ],
     "modules": [
         {
@@ -53,8 +49,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-nibbles/4.5/gnome-nibbles-4.5.0.tar.xz",
-                    "sha256": "92f2d2ec0a33b6814c462b468cd0e83085e063d85e311e6a0c9aa69b62ffe914",
+                    "url": "https://download.gnome.org/sources/gnome-nibbles/4.5/gnome-nibbles-4.5.1.tar.xz",
+                    "sha256": "84bad2825d39b8bf701ef644aab16b2dc7e72bb43e3f8702d23eec9613d29637",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-nibbles"
