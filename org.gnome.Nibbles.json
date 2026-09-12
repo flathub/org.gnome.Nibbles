@@ -48,8 +48,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-nibbles/4.5/gnome-nibbles-4.5.2.tar.xz",
-                    "sha256": "76729d3b562cd7862ad30590c3bd40fd251f9d4bb5c53baa84150197f231a5fa",
+                    "url": "https://download.gnome.org/sources/gnome-nibbles/4.6/gnome-nibbles-4.6.0.tar.xz",
+                    "sha256": "dbbdd27a86f0b422a8106b81491633fcd0509613e964dcea8387e8a7bebfd7ee",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-nibbles"
