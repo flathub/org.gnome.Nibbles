@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Nibbles",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-nibbles",
     "finish-args": [
@@ -16,13 +16,16 @@
         "/lib/girepository-1.0",
         "/lib/pkgconfig",
         "/share/gir-1.0",
-        "/share/man",
-        "/share/vala"
+        "/share/man"
     ],
     "modules": [
+        "gtkmm.json",
         {
             "name": "gsound",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Denable_vala=false"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -41,6 +44,9 @@
         {
             "name": "gnome-nibbles",
             "buildsystem": "meson",
+            "build-options": {
+                "cxxflags": "-fdiagnostics-all-candidates"
+            },
             "config-opts": [
                 "-Dappend_to_version= (flathub.org)",
                 "-Dwebsite=https://flathub.org/apps/org.gnome.Nibbles"
@@ -48,9 +54,10 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-nibbles/4.5/gnome-nibbles-4.5.2.tar.xz",
-                    "sha256": "76729d3b562cd7862ad30590c3bd40fd251f9d4bb5c53baa84150197f231a5fa",
+                    "url": "https://download.gnome.org/sources/gnome-nibbles/4.6/gnome-nibbles-4.6.2.tar.xz",
+                    "sha256": "893c0970b073e12f1638fbbd51067a1ceb4bd56f6028bac5aeab8b94bdb6f913",
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "gnome",
                         "name": "gnome-nibbles"
                     }
